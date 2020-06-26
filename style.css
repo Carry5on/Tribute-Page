@@ -1,0 +1,129 @@
+/* global information */
+#main {
+    background-color: #005548;
+    color: #dfe0df;
+    font-family: 'Merriweather', serif;
+    width: 100%;
+}
+/* title */
+#title {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Notable', sans-serif;
+    letter-spacing: 7px;
+    font-weight: lighter;
+}
+
+#title h1 {
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#title h2 {
+    font-weight: lighter;
+    letter-spacing: 3px;;
+}
+
+/* image */
+#img-div {
+    display: flex;
+    background-color: #8b794e;
+    border-radius: 2%;
+    justify-content: center; 
+    
+}
+
+#image {
+    height: 400px;
+    border-radius: 2%;
+    margin: auto;
+    align-items:center;
+    vertical-align: top;  
+}
+
+#img-caption {
+    background-color: #b3aa99;
+    box-shadow: 20px 10px #005548;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    opacity: .9;
+} /* information section */
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* basic information */
+#basic-information {
+    display: grid;
+    justify-self: center;
+    margin: 20px 10px 0px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.full-name, .born, .spouse, .children, .genres {
+    padding: 10px;
+    color: #005548;
+    background-color: #dfe0df;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    #basic-information {
+        display: grid;
+        justify-self: center;
+        margin: 20px 10px 0px 10px;
+        grid-gap: 5px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto;
+    }
+}
+
+/* top videos section */
+#top-videos {
+    display:table;
+    justify-content: center; 
+    margin: auto 0;   
+}
+
+#top-videos h2 {
+    font-family: 'Notable', sans-serif;
+    letter-spacing: 5px;
+    padding: 30px;
+}
+#top-videos ol {
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+    list-style-position: inside;
+    margin: 0 auto;
+}
+
+/* links section */
+#tribute-link {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #012e27;
+    opacity: 0.8;
+    padding: 20px auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.link {
+    margin-left: 30px;
+    color: #dfe0df;
+    padding: 15px;
+}
+.link:hover {
+    background-color: #b3aa99;
+    color: #005548;
+    border-radius: 10px 10px;
+}
