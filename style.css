@@ -30,17 +30,15 @@
 #img-div {
     display: flex;
     background-color: #8b794e;
-    border-radius: 2%;
-    justify-content: center; 
-    
+    border-radius: 2%;   
+    justify-content: center;
+    align-items: center;
 }
 
 #image {
     height: 400px;
     border-radius: 2%;
-    margin: auto;
-    align-items:center;
-    vertical-align: top;  
+    position: relative;
 }
 
 #img-caption {
@@ -51,28 +49,35 @@
     padding: 10px;
     font-size: 15px;
     opacity: .9;
-} /* information section */
+} 
+/* information section */
 #tribute-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /* basic information */
 #basic-information {
     display: grid;
     justify-self: center;
     margin: 20px 10px 0px 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-gap: 20px;
 }
 
 .full-name, .born, .spouse, .children, .genres {
     padding: 10px;
     color: #005548;
     background-color: #dfe0df;
-    text-align: center;
+    text-align: center;      
 }
+
+.full-name:hover, .born:hover, .spouse:hover, .children:hover, .genres:hover {
+    box-shadow: 7px 7px #8b794e;
+}
+
 
 @media (max-width: 800px){
     #basic-information {
@@ -83,13 +88,17 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: auto;
     }
+    .full-name, .born, .spouse, .children, .genres {
+        margin-top: 10px;
+    }
 }
 
 /* top videos section */
 #top-videos {
-    display:table;
+    display:flex;
     justify-content: center; 
-    margin: auto 0;   
+    margin: auto 0; 
+    flex-direction: column;  
 }
 
 #top-videos h2 {
@@ -100,8 +109,8 @@
 #top-videos ol {
     line-height: 30px;
     margin: auto;
-    text-align: center;
-    list-style-position: inside;
+    text-align: left;
+    list-style-position: center;
     margin: 0 auto;
 }
 
